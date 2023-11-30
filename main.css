@@ -1,0 +1,45 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #3E363F;
+	font-family: 'Changa', sans-serif;
+	
+	height: 100%;
+}
+
+.container{
+	max-width: 1400px;
+	width: 90%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.screen{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.screenBackground{
+	
+}
+
+header{
+	font-size: 200px;
+	color: #136F63;
+	font-weight: 800;
+	
+	padding-bottom: 40px;
+	background-image: url("assets/backgroundTitle.jpg");
+	mix-blend-mode: lighten;
+	background-color: #3E363F;
+}
