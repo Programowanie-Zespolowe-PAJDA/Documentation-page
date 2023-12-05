@@ -17,7 +17,6 @@ body{
 	
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 .screen{
@@ -89,5 +88,41 @@ header{
 	transition: color 0.4s, letter-spacing 0.4s;
 	
 	cursor: pointer;
-	letter-spacing: 1px;
+	letter-spacing: 4px;
+}
+
+.projectDiv{
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/5054535/pexels-photo-5054535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: 100% auto;
+	background-position: center;
+	background-blend-mode: darken;
+
+	width: 100%;
+	
+	margin-top: 100px;
+	
+	padding-top: 75px;
+	padding-bottom: 75px;
+	
+	box-shadow: 0px 0px 50px #AE8CA355;
+}
+
+.projectDivTitle{
+	
+	text-align: center;
+	font-size: 128px;
+	font-weight: 100;
+	color: #136F63;
+}
+
+.projectDivDescription{
+	max-width: 1100px;
+	width: 90%;
+	text-align: justify;
+	
+	color: #A7C4C2;
+	margin-top: 75px;
+	
+	margin-left: auto;
+	margin-right: auto;
 }
