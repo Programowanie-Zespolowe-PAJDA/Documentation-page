@@ -101,15 +101,15 @@ header{
 	
 	margin-top: 100px;
 	
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 10px;
+	padding-bottom: 125px;
 	
 	box-shadow: 0px 0px 50px #AE8CA355;
 }
 
 .title{	
 	text-align: center;
-	font-size: 96px;
+	font-size: 48px;
 	font-weight: 100;
 	color: #136F63;
 	letter-spacing:5px;
@@ -117,12 +117,18 @@ header{
 
 .marginPage{
 	margin-top: 150px;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
+}
+
+.marginAboutProject{
+	margin-top: 90px;
+	margin-top: 90px;
+	margin-bottom: 50px;
 }
 
 .projectDivDescription{
 	max-width: 1100px;
-	width: 90%;
+	width: 55%;
 	text-align: justify;
 	
 	color: #A7C4C2;
@@ -130,6 +136,9 @@ header{
 	
 	margin-left: auto;
 	margin-right: auto;
+	
+	font-size: 18px;
+	font-weight: 100;
 }
 
 .monthContainer{
@@ -140,8 +149,8 @@ header{
 	
 	grid-gap: 20px;
 	
-	width: 70%;
-	height: 1200px;
+	width: 60%;
+	height: 800px;
 	
 	margin-left: auto;
 	margin-right: auto;
@@ -246,7 +255,7 @@ header{
 	
 	font-weight: 100;
 	letter-spacing: 5px;
-	font-size: 36px;
+	font-size: 24px;
 	color: #A7C4C2;
 	
 	position: relative;
@@ -279,7 +288,7 @@ header{
 	left: 0px;
 	color: #A7C4C200;
 	background-color: #AE8CA322;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 .meeting{
@@ -293,7 +302,7 @@ header{
 	
 	padding: 40px 20px;
 	
-	width: 80%;
+	width: 70%;
 	
 	margin-left: auto;
 	margin-right: auto;
@@ -307,7 +316,7 @@ header{
 	
 	font-weight: 100;
 	color: #A7C4C2;
-	font-size: 36px;
+	font-size: 24px;
 	letter-spacing: 10px;
 }
 
@@ -318,5 +327,90 @@ header{
 	
 	font-weight: 100;
 	color: #A7C4C2;
+	font-size: 18px;
+	
+	text-align: justify;
+}
+
+.teamContainer{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
+	gap:70px 140px;
+	flex-wrap: wrap;
+	width: 80%;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.circle{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	
+	border-radius: 50%;
+	
+	border: 1px solid #AE8CA3;
+	
+	
+	
+	width:170px;
+	height: 170px;
+}
+
+.imageCircle{
+	border-radius: 50%;
+	
+	background-image: url("https://images.pexels.com/photos/5665104/pexels-photo-5665104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	width:	150px;
+	height: 150px;
+}
+
+.name{
+	color: #136F63;
+	letter-spacing: 4px;
 	font-size: 24px;
+	
+	font-weight: 100;
+	text-align: center;
+}
+
+.role{
+	color: #A7C4C2;
+	font-size: 16px;
+	font-weight: 100;
+	text-align:center;
+}
+
+.teamContainer div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer{
+	margin-top: 100px;
+
+	padding: 80px 20px 80px 20px;
+
+	background-color: #136F63;
+	
+	font-weight: 100;
+	color: #A7C4C2;
+	
+	font-size: 24px;
+	
+	text-align: center;
+	
+	margin-right: auto;
+	margin-left: auto;
 }
