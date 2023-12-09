@@ -1,0 +1,574 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #3E363F;
+	font-family: 'Anuphan', sans-serif;
+	
+	height: 100%;
+}
+
+.container{
+	max-width: 1400px;
+	width: 90%;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.screen{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.screenBackground{
+	
+}
+
+.screenContainer{
+	position: relative;
+}
+
+.screen80{
+	height: 80%;
+}
+
+
+header{
+	font-size: 144px;
+	color: #136F63;
+	font-weight: 100;
+	letter-spacing: 15px;
+	/*animation: titleAnim;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	*/
+}
+
+/*
+@keyframes titleAnim{
+	20% {letter-spacing: 15px;}
+	30% {letter-spacing: 30px;}
+	40% {letter-spacing: 15px;}
+	100% {letter-spacing: 15px;}
+}
+*/
+
+.teamTitle{
+	font-size: 16px;
+	color: #A7C4C2;
+	letter-spacing: 5px;
+	
+	font-weight: 100;
+	
+	position: absolute;
+	bottom: 0px;
+	right: -100px;
+}
+
+.footerOfTitle{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 45px;
+	
+	height: 20%;
+	width: 100%;
+	
+	font-weight: 100;
+	color: #A7C4C2;
+	padding: 10px 50px 10px 50px;
+}
+
+.footerOfTitle span{
+	padding: 10px;
+	transition: color 0.7s, letter-spacing 0.7s;
+	font-size: 20px;
+	text-align:center;
+	flex-grow: 1;
+}
+
+.footerOfTitle span:hover{
+	color: #FF7F11;
+	transition: color 0.4s, letter-spacing 0.4s;
+	
+	cursor: pointer;
+	letter-spacing: 4px;
+}
+
+.projectDiv{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/6205512/pexels-photo-6205512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: 100% auto;
+	background-position: center;
+	background-blend-mode: darken;
+
+	width: 100%;
+	
+	margin-top: 100px;
+	
+	padding-top: 10px;
+	padding-bottom: 125px;
+	
+	box-shadow: 0px 0px 50px #AE8CA322;
+	
+	transition: background 3s, box-shadow 2s;
+}
+
+.projectDiv:hover{
+	background: rgba(12,3,12,0.9)url("https://images.pexels.com/photos/6205512/pexels-photo-6205512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: 100% auto;
+	background-position: center;
+	background-blend-mode: darken;
+	
+	box-shadow: 0px 0px 50px #AE8CA3cc;
+	
+	transition: background 1.5s, box-shadow 2s;
+}
+
+.projectDivDescriptionCointainer{
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+
+.projectDiv:hover .projectDivDescriptionCointainer{
+	opacity: 1;
+	transition: opacity 2s;
+}
+
+.title{	
+	text-align: center;
+	font-size: 48px;
+	font-weight: 100;
+	color: #136F63;
+	letter-spacing:5px;
+}
+
+.marginPage{
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+.marginAboutProject{
+	margin-top: 90px;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+
+.projectDivDescription{
+	max-width: 1100px;
+	width: 55%;
+	text-align: justify;
+	
+	color: #A7C4C2;
+	margin-top: 75px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.monthContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(4, 25%);
+	
+	
+	grid-gap: 20px;
+	
+	width: 60%;
+	height: 800px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#november{
+	grid-column: 1/span 2;
+	grid-row: 1;
+	
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/19382079/pexels-photo-19382079/free-photo-of-snieg-drewno-jasny-swit.jpeg");
+	
+	background-size: 100% auto;
+	background-position: center;
+
+}
+
+
+#november:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/19382079/pexels-photo-19382079/free-photo-of-snieg-drewno-jasny-swit.jpeg");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+#december{
+	grid-column: 3;
+	grid-row: 1/span 2;
+
+	
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/3652417/pexels-photo-3652417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: auto 100%;
+	background-position: center;
+
+}
+
+
+#december:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/3652417/pexels-photo-3652417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: auto 100%;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+#january{
+	grid-column: 1;
+	grid-row: 2/span 2;
+	
+	
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/1978126/pexels-photo-1978126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+
+}
+
+
+#january:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/1978126/pexels-photo-1978126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+#february{
+	grid-column: 2;
+	grid-row: 2;
+	
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/4226765/pexels-photo-4226765.jpeg");
+	
+	background-size: 100% auto;
+	background-position: center;
+
+}
+
+
+#february:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/4226765/pexels-photo-4226765.jpeg");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+#march{
+	grid-column: 2/span 2;
+	grid-row: 3;
+
+	
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/250591/pexels-photo-250591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+}
+
+
+#march:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/250591/pexels-photo-250591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+#april{
+	grid-column: 1/span 2;
+	grid-row: 4;
+	
+	
+	background: rgba(12,3,12,0.8)url("https://images.pexels.com/photos/59318/pexels-photo-59318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+}
+
+#april:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/59318/pexels-photo-59318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+#may{
+	grid-column: 3;
+	grid-row: 4;
+	
+	
+	
+	background: rgba(12,3,12,0.5)url("https://images.pexels.com/photos/2889685/pexels-photo-2889685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	
+}
+
+#may:hover{
+	background: rgba(12,3,12,0.2)url("https://images.pexels.com/photos/2889685/pexels-photo-2889685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	transition: background 0.6s;
+}
+
+.monthContainer > div{
+	display: flex;
+	
+	gap: 30px;
+	
+	justify-content: center;
+	align-items: center;
+	
+	box-shadow: 0px 0px 5px #AE8CA3;
+	
+	background-blend-mode: darken;
+	overflow:hidden;
+	
+	font-weight: 100;
+	letter-spacing: 5px;
+	font-size: 24px;
+	color: #A7C4C2;
+	
+	position: relative;
+	font-weight:400;
+}
+
+.monthContainer > div:hover{
+	color: #fff0;
+	transition: 1.3s  color;
+}
+
+.monthContainer > div:hover .monthDescription{
+	top: 25%;
+	color: #A7C4C2;
+	transition: 0.9s all;
+	transition: 0.9s all;
+}
+
+.monthDescription{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+	text-align: center;
+	
+	width: 100%;
+	height: 50%;
+	
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	color: #A7C4C200;
+	background-color: #136F63cc;
+	font-size: 16px;
+}
+
+.meeting{
+	
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 100%;
+	
+	border-bottom: 1px solid #AE8CA3;
+	border-top: 1px solid #AE8CA3;
+	
+	padding: 40px 20px;
+	
+	width: 70%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+}
+
+.date{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	font-weight: 100;
+	color: #A7C4C2;
+	font-size: 24px;
+	letter-spacing: 10px;
+}
+
+.meetingDesc{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+	font-weight: 100;
+	color: #A7C4C2;
+	font-size: 18px;
+	
+	text-align: justify;
+}
+
+.teamContainer{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
+	gap:70px 140px;
+	flex-wrap: wrap;
+	width: 80%;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.circle{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	
+	border-radius: 50%;
+	
+	border: 1px solid #AE8CA3;
+	
+	
+	
+	width:170px;
+	height: 170px;
+}
+
+.imageCircle{
+	border-radius: 50%;
+	
+	background-image: url("https://images.pexels.com/photos/5665104/pexels-photo-5665104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	
+	background-size: 100% auto;
+	background-position: center;
+	
+	width:	150px;
+	height: 150px;
+}
+
+.name{
+	color: #136F63;
+	letter-spacing: 4px;
+	font-size: 24px;
+	
+	font-weight: 100;
+	text-align: center;
+}
+
+.role{
+	color: #A7C4C2;
+	font-size: 16px;
+	font-weight: 100;
+	text-align:center;
+}
+
+.teamContainer div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer{
+	margin-top: 100px;
+
+	padding: 80px 20px 80px 20px;
+
+	background-color: #136F63;
+	
+	font-weight: 100;
+	color: #A7C4C2;
+	
+	font-size: 24px;
+	
+	text-align: center;
+	
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 800px) {
+	header{
+		font-size: 64px;
+		padding: 20px;
+	}
+	
+	.teamTitle{
+		font-size: 14px;
+		position: relative;
+		width: 100%;
+		right: 0px;
+		text-align: center;
+	}
+	
+	.footerOfTitle span{
+		width: 100%;
+		display: block;
+		margin-bottom: 15px;
+	}
+	
+	.footerOfTitle{
+		display: block;
+		
+		margin-bottom: 200px;
+	}
+	
+	.projectDivDescription{
+		width: 90%;
+	}
+	
+	.monthContainer{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		flex-direction: column;
+		width: 90%;
+	}
+	
+	.monthContainer > div{
+		width: 100%;
+		height: 350px;
+	}
+	
+	.meeting{
+		display: block;
+	}
+	
+	.date{
+		margin-bottom: 30px;
+	}
+}
