@@ -9,7 +9,15 @@ body{
 	font-family: 'Anuphan', sans-serif;
 	
 	height: 100%;
+	
+	
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 .container{
 	max-width: 1400px;
@@ -88,15 +96,20 @@ header{
 	padding: 10px 50px 10px 50px;
 }
 
-.footerOfTitle span{
+.footerOfTitle a{
 	padding: 10px;
 	transition: color 0.7s, letter-spacing 0.7s;
 	font-size: 20px;
 	text-align:center;
 	flex-grow: 1;
+	
+	color: #A7C4C2;
+	text-decoration: none;
 }
 
-.footerOfTitle span:hover{
+
+
+.footerOfTitle a:hover{
 	color: #FF7F11;
 	transition: color 0.4s, letter-spacing 0.4s;
 	
@@ -521,6 +534,28 @@ footer{
 	margin-left: auto;
 }
 
+
+.files{
+	display: flex;
+	justify-content: flex-start;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.file{
+	border: 1px solid #AE8CA3;
+	padding: 40px 20px;
+	cursor: pointer;
+	background-color: #3E363F;
+	color: #A7C4C2;
+}
+
+.material-symbols-outlined{
+	color: #A7C4C2;
+	font-size: 96px;
+}
+
 @media only screen and (max-width: 800px) {
 	header{
 		font-size: 64px;
@@ -535,7 +570,7 @@ footer{
 		text-align: center;
 	}
 	
-	.footerOfTitle span{
+	.footerOfTitle a{
 		width: 100%;
 		display: block;
 		margin-bottom: 15px;
